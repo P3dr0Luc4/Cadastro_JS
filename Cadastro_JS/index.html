@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="programa.js"></script>
+    <title>Cadastro</title>
+</head>
+
+<header>
+    <h1 id="titulo">Cadastro</h1>
+</header>
+
+<body class="roxo">
+    <form class="formulario">
+        <div class="divi_claro" id="divisao">
+            <input type="text" placeholder="Nome" name="nome" id="nome">
+            <label for="nome"></label>
+            <br>
+            
+            <input type="password" placeholder="Criar senha" name="senha" id="senha" minlength="6">
+            <label for="senha"></label>
+            <br>
+            
+            <input type="number" placeholder="Idade" name="idade" id="idade">
+            <label for="idade"></label>
+            <br>
+            
+            <input type="tel" placeholder="Telefone" name="telefone" id="telefone" maxlength="11" minlength="11">
+            <label for="telefone"></label>
+            <br>
+            
+            <input type="number" placeholder="CPF" name="cpf" id="cpf" maxlength="11" minlength="11">
+            <label for="cpf"></label>
+            <br>
+            
+            <input type="number" placeholder="RG" name="rg" id="rg" maxlength="7" minlength="7">
+            <label for="rg"></label>
+            <br>
+            
+            <input type="number" placeholder="Salário" name="salario" id="salario">
+            <label for="salario"></label>
+            <br>
+            
+            <input type="email" placeholder="E-mail" name="email" id="email">
+            <label for="email"></label>
+            <br>
+            
+            Selecione o seu gênero:
+            <br>
+            <select id="sexo" class="seletor_sexo">
+                <option id="masculino" value="masculino">Masculino</option>
+                <option id="feminino" value="feminino">Feminino</option>
+                <option id="outro" value="outro">Outro</option>
+            </select>
+            <br>
+            
+            Você fuma?
+            <br>
+            <select id="fumar" class="seletor_fumar">
+                <option value="sim" id="sim">Sim</option>
+                <option value="nao" id="nao">Não</option>
+            </select>
+            <br>
+            
+            Você tem plano de saúde?
+            <br>
+            <select id="saude" class="seletor_plano">
+                <option id="sim" value="sim">Sim</option>
+                <option id="nao" value="nao">Não</option>
+            </select>
+            <br>
+            <br>
+            
+            <input type="submit" onclick="cadastrar()">
+            <img id="imagem" src="https://3cthinkers.com/en/wp-content/uploads/2017/03/html-css-js.jpg" alt="Imagem com as logos do HTML, CSS e JS">
+        </div>
+    </form>
+    
+    <p id="botao">Clique aqui para mudar o tema:</p>
+    <button id="cor" onclick="cor()">Verde</button>
+    <br>
+    
+    <p class="par">Tela de cadastro com validação JS</p>
+    <p class="par">Padrões Web</p>
+    <p class="par">Pedro Luca Galvão Couto</p>
+</body>
+<footer>
+ 
+</footer>
+
+</html>
